@@ -326,6 +326,7 @@ class DynamicRouter(DefaultRouter):
                 url=url,
                 mapping={'get': methodname},
                 name=replace_methodname(route_name, field_name),
+                detail=None,
                 initkwargs={}
             ))
         return routes
