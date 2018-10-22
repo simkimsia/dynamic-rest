@@ -11,10 +11,11 @@ from django.utils import six
 from rest_framework import views
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
-from rest_framework.routers import DefaultRouter, Route, replace_methodname
+from rest_framework.routers import DefaultRouter, Route
 
 from dynamic_rest.meta import get_model_table
 from dynamic_rest.conf import settings
+from dynamic_rest.utils import replace_methodname
 
 directory = {}
 resource_map = {}
